@@ -1,0 +1,63 @@
+{
+  "name": "dataSwapApp",
+  "version": "1.0.0",
+  "fullpage": true,
+  "size": {
+    "width": 4,
+    "height": 3
+  },
+  "mapping":[],
+  "workflowsMapping": [
+    {
+      "alias": "swapWorkflow",
+      "modelId": null,
+      "version": null,
+      "parameters": [
+        {
+          "name": "oldDataset",
+          "aliasedName": "oldDataset",
+          "type": "text",
+          "list": false,
+          "children": []
+        },
+        {
+          "name": "newDataset",
+          "aliasedName": "newDataset",
+          "type": "text",
+          "list": false,
+          "children": []
+        },
+        {
+          "name": "dataflowIds",
+          "aliasedName": "dataflowIds",
+          "type": "text",
+          "list": true,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "packageMapping": [
+    {
+      "alias": "getDataflowIds",
+      "parameters": [
+        {
+          "alias": "oldDataset",
+          "type": "dataset",
+          "nullable": true,
+          "isList": false,
+          "children": null
+        }
+      ],
+      "output": {
+        "alias": "dataflowIds",
+        "type": "text",
+        "isList": true,
+        "children": null
+      }
+    }
+  ],
+  "fileName": "manifest.json",
+  "id": "6149bf50-50b4-41c3-ab0b-e14726385fc4",
+  "proxyId": "ba802ee5-c747-4dbd-8ee3-304868287a1f"
+}

@@ -1,0 +1,98 @@
+<html>
+  <link href="//fonts.googleapis.com/css?family=Roboto+Mono:600,400,300" rel="stylesheet" type="text/css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="stylesheet" href="app.css" />
+
+
+
+
+  <!-- Header -->
+  <header>Dataset Swap App</header>
+
+<!-- Search  For Dataset -->
+<div class="container">
+  <div class="split">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#oldModal" id="oldButton">
+      Select Old Dataset
+    </button>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#newModal" id="newButton">
+      Select New Dataset
+    </button>
+  </div>
+</div>
+
+
+<div class="modal fade bd-example-modal-lg" id="oldModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Select the Old Dataset</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+          <div class="input-group mb-3">
+      <input type="text" class="form-control" id="searchInput" placeholder="Search...">
+  </div>
+  <div id="tableContainer" class="table">
+  </div>
+    </div>
+  </div>
+</div> 
+</div>
+
+<div class="modal fade bd-example-modal-lg" id="newModal" tabindex="-1" role="dialog" aria-labelledby="newModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="newModalLabel">Select the New Dataset</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+          <div class="input-group mb-3">
+      <input type="text" class="form-control" id="searchInputnew" placeholder="Search...">
+  </div>
+  <div id="tableContainernew" class="table">
+  </div>
+    </div>
+  </div>
+</div> 
+</div>
+
+
+<div class="buttonContainer">
+</div>
+
+<div class="alertContainer">
+  <div id="alert" class="alert" role="alert"></div>
+</div>
+
+  <!-- Table -->
+  <div id="myGrid" class="ag-theme-quartz" style="height: 500px"></div>
+</body>
+
+<div id="workflowStartedAlert" class="alertWorkflow">
+</div>
+
+
+  <footer>
+    <button class="button" id="submitButton" type="submit">Start Workflow</button>
+  </footer>
+
+
+  <script src="domo.js"></script>
+  <script src="app.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/ag-grid-community/dist/ag-grid-community.min.js"></script>
+</html>
+
